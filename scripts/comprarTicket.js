@@ -7,7 +7,7 @@ let btnBorrar = document.getElementById("btnBorrar");
 let btnResumen = document.getElementById("btnResumen");
 
 btnBorrar.addEventListener("click", () => {
-    lblTotal.innerHTML = `Total a pagar $`;
+    lblTotal.innerHTML = `Total a pagar: $`;
 })
 
 txtCantidad.addEventListener("click", () => {
@@ -35,7 +35,7 @@ function precioTotal() {
     total = ticket * txtCantidad.value;
     total = total - (total * descuentoCat);
 
-    lblTotal.innerHTML = `Total a pagara $${total}`;
+    lblTotal.innerHTML = `Total a pagar $${total}`;
 }
 
 btnResumen.addEventListener("click", (e) => {
